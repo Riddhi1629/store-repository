@@ -5,7 +5,7 @@ from security import authenticate,identity
 from resources.users import UserRegister
 from resources.item import Item,Items
 from resources.store import Store,StoreList
-importb os
+import os
 
 app=Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI']=os.environ.get('DATABASE_URL','sqlite:///data.db')
